@@ -1,5 +1,6 @@
 :root {
-    --background-color: #ffffff
+    --background-color: #ffffff;
+    --portfolio-hover-text-color: #f4f4f4;
 }
 
 body {
@@ -138,7 +139,7 @@ img {
 }
 
 .first-section {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(36, 47, 66, 0.70)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
@@ -564,7 +565,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #f4f4f4;
+    color: var(--portfolio-hover-text-color);
     padding: 40px 32px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -642,6 +643,7 @@ img {
     background-color: #e7e9fc;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -660,6 +662,7 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover .close-icon {
+.close-btn:hover .close-icon,
+.close-btn:focus .close-icon {
     fill: #ffffff;
 }
